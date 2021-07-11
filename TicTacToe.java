@@ -39,6 +39,15 @@ public class TicTacToe {
 		return null;	
 	}
 	
+	public static void showBoard() {
+		System.out.println("|---|---|---|");
+		System.out.println("| "+board[0]+" | "+board[1]+" | "+board[2]+" |");
+		System.out.println("| "+board[0]+" | "+board[1]+" | "+board[2]+" |");
+		System.out.println("| "+board[0]+" | "+board[1]+" | "+board[2]+" |");
+		System.out.println("|---|---|---|");
+		
+	}
+	
 	public static void option() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the symbol you want to use X or O:");
@@ -50,6 +59,7 @@ public class TicTacToe {
 		board = new String[9];
 		playBoard();
 		option();
+		showBoard();
 	}
 
 }
